@@ -42,8 +42,6 @@
     "src/**/*.spec.ts",
     "src/**/*.test.ts",
     ".next",
-    "eslint.config.js",
-    "eslint.config.cjs",
-    "eslint.config.mjs"
+    "eslint.config.ts"
   ]
 }

@@ -93,7 +93,6 @@ const eslintConfig = [
 
     // 규칙 설정
     rules: {
-      '@typescript-eslint/explicit-function-return-type': 'off',
       'react-refresh/only-export-components': [
         'warn',
         {
@@ -144,7 +143,7 @@ const eslintConfig = [
 
   // mjs 파일에 대한 특별 설정
   {
-    files: ['next.config.mjs', 'postcss.config.mjs'],
+    files: ['next.config.ts', 'postcss.config.ts', 'jest.preset.ts', 'jest.config.ts'],
     languageOptions: {
       sourceType: 'module',
     },

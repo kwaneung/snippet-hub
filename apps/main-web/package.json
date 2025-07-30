@@ -2,6 +2,7 @@
   "name": "@snippet-hub/main-web",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "dependencies": {
     "next": "~15.4.4",
     "react": "19.1.0",
