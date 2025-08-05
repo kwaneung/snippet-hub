@@ -1,14 +1,20 @@
-import playwright from 'eslint-plugin-playwright';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+import { FlatCompat } from '@eslint/eslintrc';
+import js from '@eslint/js';
+import nx from '@nx/eslint-plugin';
+
 import baseConfig from '../../eslint.config.ts';
+const compat = new FlatCompat({
+  baseDirectory: dirname(fileURLToPath(import.meta.url)),
+  recommendedConfig: js.configs.recommended,
+});
 
 const eslintConfig = [
-  playwright.configs['flat/recommended'],
+  ...compat.extends('next', 'next/core-web-vitals'),
   ...baseConfig,
-  {
-    files: ['**/*.ts', '**/*.js'],
-    // Override or add rules here
-    rules: {},
-  },
+  ...nx.configs['flat/react-typescript'],
 ];
 
 export default eslintConfig;
