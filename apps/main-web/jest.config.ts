@@ -8,6 +8,7 @@ const createJestConfig = nextJest({
 
 const config: Config = {
   displayName: '@snippet-hub/main-web',
+  preset: undefined, // preset 참조 제거
   ...nxPreset,
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   globals: {

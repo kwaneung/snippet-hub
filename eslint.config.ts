@@ -143,7 +143,7 @@ const eslintConfig = [
 
   // mjs 파일에 대한 특별 설정
   {
-    files: ['next.config.ts', 'postcss.config.ts', 'jest.preset.ts', 'jest.config.ts'],
+    files: ['next.config.ts', 'postcss.config.ts', 'jest.config.ts'],
     languageOptions: {
       sourceType: 'module',
     },
